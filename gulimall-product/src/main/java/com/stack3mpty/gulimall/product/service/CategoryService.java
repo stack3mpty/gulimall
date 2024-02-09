@@ -1,0 +1,20 @@
+package com.stack3mpty.gulimall.product.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.stack3mpty.common.utils.PageUtils;
+import com.stack3mpty.gulimall.product.entity.CategoryEntity;
+
+import java.util.Map;
+
+/**
+ * 商品三级分类
+ *
+ * @author stack3mpty
+ * @email stackmpty@gmail.com
+ * @date 2024-02-09 11:50:35
+ */
+public interface CategoryService extends IService<CategoryEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
